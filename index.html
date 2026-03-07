@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OurAI Foundation — Coming Soon</title>
+  <!-- Adobe Fonts — ITC Avant Garde Gothic Pro -->
+  <link rel="stylesheet" href="https://use.typekit.net/ray1eoy.css">
+
+  <style>
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ecf0f2;
+      font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+      color: #3c4c52;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Top-left icon */
+    .top-icon {
+      position: absolute;
+      top: 30px;
+      left: 35px;
+      width: 43px;
+      height: 41px;
+    }
+
+    .top-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Center logo area */
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 140px;
+    }
+
+    .logo-main {
+      width: 460px;
+      max-width: 80vw;
+    }
+
+    .logo-main img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Coming Soon section */
+    .coming-soon-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 120px;
+      padding: 0 60px;
+      gap: 0;
+    }
+
+    .coming-soon-text {
+      text-align: right;
+      font-size: 58px;
+      font-weight: 300;
+      letter-spacing: 5.8px;
+      line-height: 1.2;
+      flex-shrink: 0;
+      padding-right: 40px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 133px;
+      background-color: #3c4c52;
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+
+    .mission-text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      max-width: 600px;
+      padding-left: 40px;
+    }
+
+    /* Watermark - bottom right */
+    .watermark {
+      position: absolute;
+      bottom: -30px;
+      right: -20px;
+      width: 412px;
+      height: 393px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .watermark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 49px;
+      left: 35px;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 1.6px;
+      color: #3c4c52;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .coming-soon-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 30px;
+      }
+
+      .coming-soon-text {
+        text-align: center;
+        font-size: 42px;
+        padding-right: 0;
+      }
+
+      .divider {
+        width: 100px;
+        height: 1px;
+      }
+
+      .mission-text {
+        padding-left: 0;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .logo-section {
+        padding-top: 100px;
+      }
+
+      .watermark {
+        width: 280px;
+        height: 267px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Top-left small icon -->
+    <div class="top-icon">
+      <img src="https://www.figma.com/api/mcp/asset/431cbd23-93f2-4d8d-99ee-0a51350f7cb5" alt="OurAI icon">
+    </div>
+
+    <!-- Main logo (SVG includes "FOUNDATION" text) -->
+    <div class="logo-section">
+      <div class="logo-main">
+        <svg viewBox="0 0 661 214" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OurAI Foundation">
+          <path d="M297.966 82.3386H279.189C278.273 82.3386 277.538 83.092 277.538 84.0145V140.99H212.853C205.696 140.99 199.886 135.101 199.886 127.828V84.0376C199.886 83.0997 199.136 82.3309 198.205 82.3309H179.466C178.527 82.3309 177.762 83.1074 177.762 84.0607V127.836C177.762 147.502 193.471 163.439 212.838 163.439H297.974C298.898 163.439 299.647 162.678 299.647 161.74V84.0453C299.647 83.0997 298.89 82.3309 297.958 82.3309L297.966 82.3386ZM81.28 0C36.4628 0 0 37.0101 0 82.5C0 127.99 36.4628 165 81.28 165C126.097 165 162.56 127.99 162.56 82.5C162.56 37.0101 126.09 0 81.28 0ZM81.28 142.543C48.6574 142.543 22.1246 115.605 22.1246 82.5C22.1246 49.3954 48.6574 22.449 81.28 22.449C113.903 22.449 140.435 49.3878 140.435 82.4923C140.435 115.597 113.895 142.536 81.28 142.536V142.543ZM425.487 117.942C425.487 98.2758 409.778 82.3309 390.403 82.3309H320.575C319.666 82.3309 318.924 83.0843 318.924 84.0068V161.779C318.924 162.694 319.659 163.439 320.56 163.439H339.405C340.306 163.439 341.041 162.694 341.041 161.779V104.78H390.403C397.561 104.78 403.363 110.669 403.363 117.934C403.363 118.78 404.044 119.472 404.877 119.472H423.965C424.798 119.472 425.48 118.78 425.48 117.934L425.487 117.942ZM656.731 160.779L563.06 9.76377C562.514 8.89502 561.575 8.37224 560.56 8.37224H539.125C537.769 8.37224 536.943 9.88678 537.663 11.0554L631.38 162.148C631.895 162.978 632.789 163.478 633.758 163.478H655.262C656.625 163.478 657.458 161.956 656.731 160.779ZM513.766 9.17948C513.084 8.10316 511.531 8.11085 510.865 9.19486L416.883 160.848C416.186 161.971 416.981 163.439 418.292 163.439L439.909 163.462C441.083 163.462 441.931 162.747 442.385 162.017L512.372 49.0341L582.472 162.063C583.018 162.94 583.965 163.47 584.987 163.47H606.294C607.778 163.47 608.611 161.979 607.809 160.687L513.766 9.17948Z" fill="#3C4C52"/>
+          <path d="M418.093 212.867H416.124V193.167H426.08V194.951H418.093V202.085H425.787V203.869H418.093V212.867Z" fill="#3C4C52"/>
+          <path d="M457.688 203.017C457.688 208.581 452.976 213.213 447.253 213.213C441.875 213.213 436.844 208.847 436.844 203.123C436.844 197.453 441.476 192.821 447.253 192.821C452.976 192.821 457.688 197.4 457.688 203.017ZM455.718 203.044C455.718 198.491 451.964 194.605 447.226 194.605C442.567 194.605 438.814 198.545 438.814 203.123C438.814 207.569 442.674 211.429 447.253 211.429C451.964 211.429 455.718 207.569 455.718 203.044Z" fill="#3C4C52"/>
+          <path d="M481.065 205.732V193.167H483.035V205.652C483.035 210.631 480.133 213.213 476.326 213.213C472.573 213.213 469.618 210.71 469.618 205.599V193.167H471.588V205.706C471.588 209.672 473.717 211.429 476.326 211.429C478.589 211.429 481.065 210.018 481.065 205.732Z" fill="#3C4C52"/>
+          <path d="M512.325 212.867H510.355L498.668 195.537H498.615V212.867H496.645V193.167H499.307L510.302 209.512H510.355V193.167H512.325V212.867Z" fill="#3C4C52"/>
+          <path d="M530.859 212.867H525.109V193.167H530.939C533.308 193.167 535.704 193.753 537.461 194.898C540.123 196.655 541.747 199.796 541.747 203.123C541.747 205.573 540.815 207.942 538.899 209.912C536.982 211.908 534.187 212.867 530.859 212.867ZM527.079 211.083H530.699C533.974 211.083 536.157 210.231 537.594 208.714C539.085 207.117 539.777 205.067 539.777 203.017C539.777 200.461 538.712 198.225 536.636 196.628C535.252 195.563 533.149 194.951 530.62 194.951H527.079V211.083Z" fill="#3C4C52"/>
+          <path d="M568.212 212.867H566.056L563.207 206.238H554.05L551.175 212.867H549.125L557.537 193.167H559.746L568.212 212.867ZM562.435 204.455L558.655 195.403L554.795 204.455H562.435Z" fill="#3C4C52"/>
+          <path d="M581.793 212.867H579.823V194.951H575.298V193.167H586.292V194.951H581.793V212.867Z" fill="#3C4C52"/>
+          <path d="M601.114 212.867H599.144V193.167H601.114V212.867Z" fill="#3C4C52"/>
+          <path d="M633.9 203.017C633.9 208.581 629.188 213.213 623.465 213.213C618.087 213.213 613.056 208.847 613.056 203.123C613.056 197.453 617.688 192.821 623.465 192.821C629.188 192.821 633.9 197.4 633.9 203.017ZM631.93 203.044C631.93 198.491 628.176 194.605 623.438 194.605C618.779 194.605 615.026 198.545 615.026 203.123C615.026 207.569 618.886 211.429 623.465 211.429C628.176 211.429 631.93 207.569 631.93 203.044Z" fill="#3C4C52"/>
+          <path d="M660.711 212.867H658.741L647.054 195.537H647.001V212.867H645.031V193.167H647.693L658.688 209.512H658.741V193.167H660.711V212.867Z" fill="#3C4C52"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Coming Soon + Mission -->
+    <div class="coming-soon-section">
+      <div class="coming-soon-text">
+        COMING<br>SOON
+      </div>
+      <div class="divider"></div>
+      <p class="mission-text">
+        Creating an AI future that is truly every single one of ours, no one left behind, for the entirety of humanity, that each and every one of us fully irreversibly own, control and can be guaranteed to benefit from.
+      </p>
+    </div>
+
+    <!-- Watermark bottom-right -->
+    <div class="watermark">
+      <img src="https://www.figma.com/api/mcp/asset/85747a8e-c26c-4292-aaf5-83cbe61829bf" alt="">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">&copy;2026 OurAI Foundation</div>
+
+  </div>
+</body>
+</html>
