@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OurAI Foundation — Coming Soon</title>
+  <title>OurAI Foundation — The Future of AI</title>
   <!-- Adobe Fonts — ITC Avant Garde Gothic Pro -->
   <link rel="stylesheet" href="https://use.typekit.net/ray1eoy.css">
 
@@ -64,6 +64,16 @@
       height: auto;
     }
 
+    /* Ensure all content sits above the watermark */
+    .top-icon,
+    .logo-section,
+    .coming-soon-section,
+    .contact-section,
+    .footer {
+      position: relative;
+      z-index: 1;
+    }
+
     /* Coming Soon section */
     .coming-soon-section {
       display: flex;
@@ -74,14 +84,15 @@
       gap: 0;
     }
 
-    .coming-soon-text {
+    .section-heading {
       text-align: right;
-      font-size: 58px;
+      font-size: 38px;
       font-weight: 300;
-      letter-spacing: 5.8px;
-      line-height: 1.2;
+      letter-spacing: 3.8px;
+      line-height: 1.1;
       flex-shrink: 0;
       padding-right: 40px;
+      width: 146px;
     }
 
     .divider {
@@ -97,8 +108,32 @@
       font-weight: 300;
       line-height: 1.8;
       letter-spacing: 1px;
-      max-width: 600px;
+      max-width: 646px;
       padding-left: 40px;
+    }
+
+    /* Contact section */
+    .contact-section {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.8;
+      letter-spacing: 0.8px;
+      color: #3c4c52;
+      margin-top: 60px;
+      max-width: 830px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 60px;
+    }
+
+    .contact-section a {
+      color: #10a8df;
+      text-decoration: none;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
     }
 
     /* Watermark - bottom right */
@@ -110,6 +145,7 @@
       height: 393px;
       opacity: 0.35;
       pointer-events: none;
+      z-index: 0;
     }
 
     .watermark img {
@@ -138,10 +174,11 @@
         padding: 0 30px;
       }
 
-      .coming-soon-text {
+      .section-heading {
         text-align: center;
-        font-size: 42px;
+        font-size: 32px;
         padding-right: 0;
+        width: auto;
       }
 
       .divider {
@@ -163,6 +200,10 @@
         width: 280px;
         height: 267px;
       }
+
+      .contact-section {
+        padding: 0 30px;
+      }
     }
   </style>
 </head>
@@ -171,7 +212,7 @@
 
     <!-- Top-left small icon -->
     <div class="top-icon">
-      <img src="https://www.figma.com/api/mcp/asset/431cbd23-93f2-4d8d-99ee-0a51350f7cb5" alt="OurAI icon">
+      <img src="https://www.figma.com/api/mcp/asset/c94d35e9-0af5-4db9-96c2-e347d4ed14fe" alt="OurAI icon">
     </div>
 
     <!-- Main logo (SVG includes "FOUNDATION" text) -->
@@ -193,10 +234,10 @@
       </div>
     </div>
 
-    <!-- Coming Soon + Mission -->
+    <!-- The Future of AI + Mission -->
     <div class="coming-soon-section">
-      <div class="coming-soon-text">
-        COMING<br>SOON
+      <div class="section-heading">
+        The Future of AI
       </div>
       <div class="divider"></div>
       <p class="mission-text">
@@ -204,9 +245,15 @@
       </p>
     </div>
 
+    <!-- Contact section -->
+    <div class="contact-section">
+      We are currently up and operating and building our partnership base and team.
+      Please contact us via <a href="mailto:partnership@ourai.foundation">partnership@ourai.foundation</a> and <a href="mailto:apply@ourai.foundation">apply@ourai.foundation</a>
+    </div>
+
     <!-- Watermark bottom-right -->
     <div class="watermark">
-      <img src="https://www.figma.com/api/mcp/asset/85747a8e-c26c-4292-aaf5-83cbe61829bf" alt="">
+      <img src="https://www.figma.com/api/mcp/asset/c52389d9-c666-46c6-a4e4-1a4512278ded" alt="">
     </div>
 
     <!-- Footer -->
